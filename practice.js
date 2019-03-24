@@ -15,9 +15,11 @@
 */
 
 //Code here
-
-
-
+var me = {
+  name: 'Jaclyn',
+  age: 30
+}
+alert(`Hey it is ${me.name}`);
 ////////// PROBLEM 2 //////////
 
 /*
@@ -26,7 +28,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Metallica',
+  food: 'Chocolate',
+  person: 'Chris',
+  book: 'First They Killed My Father',
+  movie: 'The Patriot',
+  holiday: 'Halloween'
+}
 
 
 /*
@@ -34,7 +43,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Juke',
+favoriteThings.brand = 'cheap'
 
 
 /*
@@ -42,7 +52,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets',
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +67,10 @@
 */
 
 //Code here
-
+var backPack = {
+  firstPocket: 'chapstick'
+};
+var item = 'firstPocket'
 
 
 /*
@@ -65,7 +79,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +88,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +111,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis',
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -120,7 +135,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
 
+}
 
 
 /*
@@ -130,14 +147,19 @@ var user2 = {
 
 //Code Here
 
-
-
+methodCollection.alertHello = () => {
+  alert('hello');
+}
+methodCollection.logHello = () => {
+  console.log('hello');
+}
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,7 +170,11 @@ var user2 = {
 */
 
 //Code Here
-
+var makePerson = (name, birthday, ssn) => {
+return {
+  name, birthday, ssn
+}
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -160,4 +186,10 @@ var user2 = {
 
 //Code Here
 
-
+var makeCard = (cardNumber, expirationDate, securityCode) => {
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+}
